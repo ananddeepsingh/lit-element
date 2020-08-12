@@ -1,0 +1,35 @@
+.main-heading {
+  color: white;
+  background-color: #272e3d;
+  margin: 0 0 10px;
+  padding: 10px;
+}
+
+.container{
+  padding: 10px;
+}
+
+.task-name{
+  padding: 10px;
+  background-color: bisque;
+  border: none;
+}
+
+.add-task-btn{
+  color: #fff;
+  background-color: blue;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.todo-list{
+  margin: 20px 0;
+  height: 100px;
+  overflow-y: auto;
+  width: 300px;
+}
+
+.clear-completed{
+  
+}

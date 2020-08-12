@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <link rel="manifest" href="./manifest.webmanifest">
+</head>
+
+<body>
+  <script>// HACK(keanulee): The Redux package assumes `process` exists - mock it here before
+// the module is loaded.
+window.process = {
+  env: {
+    NODE_ENV: 'production'
+  }
+};</script>
+
+  <main>
+    <todo-view></todo-view>
+    <my-app></my-app>
+  </main>
+  <!-- <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script> -->
+  <script type="module" src="./index.js"></script>
+
+
+</body></html>
